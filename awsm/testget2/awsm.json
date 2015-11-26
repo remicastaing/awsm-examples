@@ -1,0 +1,55 @@
+{
+  "lambda": {
+    "envVars": [],
+    "deploy": true,
+    "package": {
+      "optimize": {
+        "builder": "browserify",
+        "minify": true,
+        "ignore": [],
+        "exclude": [
+          "aws-sdk"
+        ],
+        "includePaths": []
+      },
+      "excludePatterns": []
+    },
+    "cloudFormation": {
+      "Description": "",
+      "Handler": "aws_modules/example/testget2/handler.handler",
+      "MemorySize": 1024,
+      "Runtime": "nodejs",
+      "Timeout": 6
+    }
+  },
+  "apiGateway": {
+    "deploy": true,
+    "cloudFormation": {
+      "Type": "AWS",
+      "Path": "example/test2",
+      "Method": "GET",
+      "AuthorizationType": "none",
+      "ApiKeyRequired": false,
+      "RequestTemplates": {
+        "application/json": "{\n\"var1\": \"$input.params('var1')\",\n\"var2\": \"$input.params('var2')\"}"
+      },
+      "RequestParameters": {
+        "integration.request.querystring.var1": "method.request.querystring.var1",
+        "integration.request.querystring.var2": "method.request.querystring.var2"
+      },
+      "Responses": {
+        "400": {
+          "statusCode": "400"
+        },
+        "default": {
+          "statusCode": "200",
+          "responseParameters": {},
+          "responseModels": {},
+          "responseTemplates": {
+            "application/json": ""
+          }
+        }
+      }
+    }
+  }
+}
