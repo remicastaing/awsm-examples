@@ -1,47 +1,20 @@
 {
   "name": "awsm-exemple",
   "version": "0.0.1",
-  "description": "AWSM module with basic exemple",
-  "author": {
-    "name": "remicastaing"
-  },
-  "license": "MIT",
+  "description": "AWSM module with basic examples",
   "repository": {
     "type": "git",
-    "url": "git://github.com/remicastaing/awsm-exemple.git"
+    "url": "git+https://github.com/remicastaing/awsm-examples.git"
   },
   "keywords": [
-    "awsm"
+    "JAWS",
+    "AWSM",
+    "examples"
   ],
-  "devDependencies": {},
-  "dependencies": {
-  },
-  "gitHead": "d2b5d461ec1ea90c4bdcfbea26489b69c570bb3d",
+  "author": "Rémi Castaing <remi.castaing@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/remicastaing/awsm-exemple/issues"
+    "url": "https://github.com/remicastaing/awsm-examples/issues"
   },
-  "homepage": "https://github.com/remicastaing/awsm-exemple#readme",
-  "_id": "awsm-exemple@0.0.1",
-  "scripts": {},
-  "_shasum": "db8c65ceaac3e568ee4bdab4b248349b2c9fcbcc",
-  "_from": "awsm-exemple@*",
-  "_npmVersion": "2.11.3",
-  "_nodeVersion": "0.12.7",
-  "_npmUser": {
-    "name": "remicastaing",
-    "email": "remi.castaing@gmail.com"
-  },
-  "dist": {
-    "shasum": "db8c65ceaac3e568ee4bdab4b248349b2c9fcbcc",
-    "tarball": "http://registry.npmjs.org/awsm-exemple/-/awsm-exemple-0.0.1.tgz"
-  },
-  "maintainers": [
-    {
-      "name": "remicastaing",
-      "email": "remi.castaing@gmail.com"
-    }
-  ],
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/awsm-exemple/-/awsm-exemple-0.0.1.tgz",
-  "readme": "ERROR: No README data found!"
+  "homepage": "https://github.com/remicastaing/awsm-examples#readme"
 }
