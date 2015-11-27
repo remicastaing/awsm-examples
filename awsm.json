@@ -1,0 +1,18 @@
+{
+  "name": "awsm-examples",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remicastaing/awsm-examples"
+  },
+  "author": "Rémi Castaing <remi.castaing@gmail.com>",
+  "description": "AWSM module around some very elementary bricks",
+  "resources": {
+    "cloudFormation": {
+      "LambdaIamPolicyDocumentStatements": [],
+      "ApiGatewayIamPolicyDocumentStatements": [],
+      "Resources": {}
+    }
+  }
+}
